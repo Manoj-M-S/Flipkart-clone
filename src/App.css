@@ -6,7 +6,7 @@ a {
 }
 
 body {
-  font-family: Tajawal;
+  font-family: Tajawal !important;
 }
 /* Scroll bar */
 body::-webkit-scrollbar {

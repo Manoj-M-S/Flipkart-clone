@@ -25,6 +25,13 @@ export const productReducer = (state, action) => {
       return { ...state, sort: action.payload };
     case "FILTER_BY_STOCK":
       return { ...state, byStock: !state.byStock };
+      
+    case "FILTER_BY_GENDERM":
+      return { ...state, byMen: !state.byMen };
+      
+    case "FILTER_BY_GENDERW":
+      return { ...state, byWomen: !state.byWomen };
+
     case "FILTER_BY_SIZE_M":
       return { ...state, bySizeM: !state.bySizeM };
     case "FILTER_BY_SIZE_S":

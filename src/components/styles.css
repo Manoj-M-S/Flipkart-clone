@@ -1,5 +1,7 @@
 /* header styles */
-
+body {
+  font-family: Tajawal;
+}
 .header {
   display: block;
   text-align: center;

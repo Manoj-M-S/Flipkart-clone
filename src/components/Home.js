@@ -5,7 +5,7 @@ import SingleProduct from "./SingleProduct";
 const Home = () => {
   const {
     state: { products },
-    productState: { sort,  bySizeM,
+    productState: { sort,byMen,byWomen,  bySizeM,
       bySizeS,
       bySizeL,
       bySizeXl,
@@ -25,6 +25,12 @@ const Home = () => {
       );
     }
 
+    if (byMen) {
+      sortedProducts = sortedProducts.filter((prod) => prod.men);
+    }
+    if (byWomen) {
+      sortedProducts = sortedProducts.filter((prod) => prod.women);
+    }
     if (bySizeM) {
       sortedProducts = sortedProducts.filter((prod) => prod.sizeM);
     }

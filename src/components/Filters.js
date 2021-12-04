@@ -5,6 +5,8 @@ const Filters = () => {
   const {
     productDispatch,
     productState: { 
+      byMen,
+      byWomen,
       bySizeM,
       bySizeS,
       bySizeL,
@@ -124,7 +126,7 @@ const Filters = () => {
       </span>
       <br/>
       </div>
-     
+     <br/>
 <div>
             <h6>Select Brand</h6>
 
@@ -209,6 +211,38 @@ const Filters = () => {
             })
           }
           checked={bySupreme}
+        />
+      </span></div>
+      <br/>
+      <div><h6>Ideal for</h6><span>
+        <Form.Check
+          inline
+          label="Men"
+          name="group1"
+          type="radio"
+          id={`inline-1`}
+          onChange={() =>
+            productDispatch({
+              type: "FILTER_BY_GENDERM"
+            })
+          }
+          checked={byMen}
+        />
+      </span>
+      <br/>
+      <span>
+        <Form.Check
+          inline
+          label="Women"
+          name="group1"
+          type="radio"
+          id={`inline-2`}
+          onChange={() =>
+            productDispatch({
+              type: "FILTER_BY_GENDERW"
+            })
+          }
+          checked={byWomen}
         />
       </span></div>
       <br/>

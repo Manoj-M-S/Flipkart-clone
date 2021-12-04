@@ -13,14 +13,15 @@ const Context = ({ children }) => {
     image: "https://rukminim1.flixcart.com/image/580/696/kflftzk0/jacket/p/z/z/xxl-1285-fk-breil-by-fort-collins-original-imafwyyegzzyx6s5.jpeg?q=50",
     inStock: 3,
     sizeM: true,
+    men:true,
     brandPuma : true,
     ratings: 5
   }, {id: 1,
-    name: "Solid Men Round Neck Blue",
+    name: "Full Sleeve Women dress",
     price: 289,
-    image: "https://rukminim1.flixcart.com/image/580/696/ktketu80/t-shirt/4/0/e/m-fc4054-fastcolors-original-imag6vt77a25swua.jpeg?q=50",
+    image: "https://rukminim1.flixcart.com/image/580/696/kikluvk0-0/sweatshirt/d/0/o/m-princess-hoodie-divra-clothing-original-imafybsxg6zadxmz.jpeg?q=50",
     inStock: 3,
-    
+    women: true,
     sizeS: true,
     brandNike : true,
     ratings: 5}, {id: 1,
@@ -29,14 +30,15 @@ const Context = ({ children }) => {
       image: "https://rukminim1.flixcart.com/image/580/696/keuagsw0/jacket/f/c/u/m-blaw20jkt07a-billion-original-imafvehsmhcg77zy.jpeg?q=50",
       inStock: 3,
       sizeS: true,
+      men:true,
        brandSupreme : true,
       ratings: 5},{
         id: 1,
-        name: "Men Regular Fit Solid Spread",
+        name: "Full Sleeve Solid Women dress",
         price: 399,
-        image: "https://rukminim1.flixcart.com/image/580/696/keuagsw0-0/t-shirt/a/a/1/s-4050-4054-fastcolors-original-imafvexe7bzvjgh9.jpeg?q=50",
+        image: "https://rukminim1.flixcart.com/image/580/696/jz8qf0w0/sweatshirt/y/d/5/xxl-wm17-ss01-wine-alan-jones-original-imafjavc46zffub9.jpeg?q=50",
         inStock: 3,
-        
+        women: true,
     sizeL: true,
     brandNike : true,
 
@@ -47,13 +49,14 @@ const Context = ({ children }) => {
         image: "https://rukminim1.flixcart.com/image/580/696/k6fd47k0/shirt/e/u/v/l-c301-dustygreen-dennis-lingo-original-imafzvvr7q8zn9kh.jpeg?q=50",
         inStock: 3,
         sizeL: true,
+        men:true,
         brandGucci : true,
         ratings: 5}, {id: 1,
-          name: "Striped Men Polo Neck Whit",
+          name: "Striped Women Polo Neck White",
           price: 320,
-          image: "https://rukminim1.flixcart.com/image/580/696/kl9rssw0/jacket/9/m/z/m-m7aw20jkt023b-m7-by-metronaut-original-imagyfhjcnd5rmwg.jpeg?q=50",
+          image: "https://rukminim1.flixcart.com/image/580/696/kirr24w0-0/sweatshirt/r/c/j/xs-dancing-girl-hoodie-w-divra-clothing-original-imafyhwuuqpctabc.jpeg?q=50",
           inStock: 3,
-          
+          women: true,
         sizeXl: true,
         brandLV : true,
           ratings: 5} ]
@@ -64,6 +67,8 @@ const Context = ({ children }) => {
   });
 
   const [productState, productDispatch] = useReducer(productReducer, {
+    byMen : false,
+    byWomen: false,
     byStock: false,
     bySizeM: false,
     bySizeS: false,
