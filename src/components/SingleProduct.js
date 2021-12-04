@@ -42,6 +42,7 @@ const SingleProduct = ({ prod }) => {
             {prod.brandNike && 
                           <div>Nike</div>
             }
+            <div><img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="Assured" width="70px" height="20px"/></div>
             
           </Card.Subtitle>
           {cart.some((p) => p.id === prod.id) ? (
